@@ -2,7 +2,17 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, set up the environment variables:
+
+1. Rename `.env.local.example` to `.env.local` (or create a new `.env.local` file)
+2. Add your Spotify API credentials:
+   - Get them from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
+   - Create an app and set the redirect URI to `http://localhost:3000/api/auth/callback`
+3. Add your Google Gemini API key:
+   - Get an API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - Add it to the `GOOGLE_GEMINI_API_KEY` environment variable
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -19,6 +29,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Features
+
+- Spotify authentication and API integration
+- AI-powered playlist curation with Google Gemini
+- Create playlists based on mood, activity, or user prompts
+- Beautiful, responsive UI with Framer Motion animations
+- Spotify Web Playback integration
 
 ## Learn More
 
