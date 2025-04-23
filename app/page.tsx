@@ -486,6 +486,9 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">
                   We'll only access your playlists and liked songs
                 </p>
+                <p className="text-sm text-muted-foreground">
+                  By Mohammad Mokaram Khan (12304634) & Jasleen Kaur (12303880)
+                </p>
               </div>
             </>
           )}
